@@ -1,0 +1,12 @@
+@import "../../assets/font1/iconfont.css";
+
+/* 内容 */
+.container_content{ display: flex; padding-top: 20px; flex-wrap: wrap;  justify-content: space-between; width: 1170px; margin: 0 auto;}
+.content>.container_content>.item{ overflow: hidden;}
+.content>.container_content>.item:nth-of-type(3n+2){ margin: 0 15px 0 ;}
+.content>.container_content>.item>a>.item_text{ padding: 24px 20px;}
+.content>.container_content>.item>a>.item_text>p{ text-align: center;  line-height: 30px; }
+.content>.container_content>.item>a>.item_text>p:nth-of-type(1){ font-size: 16px; color: #333333;}
+.content>.container_content>.item>a:hover img{ transform: scale(1.1); transition: .3s all linear;} 
+.content>.container_content>.item>a:hover .item_text{ background-color: #909744; transition: .3s all linear; }
+.content>.container_content>.item>a:hover .item_text>p{ color: #ffffff;}

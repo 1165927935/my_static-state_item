@@ -1,0 +1,5 @@
+/* 页面选择部分 */
+.page{ width: 1170px; margin: 50px auto  100px; }
+.page>a{ display: inline-block; width: 40px; height: 40px; border: 1px solid #999; line-height: 40px;text-align: center; }
+.page>a:hover{ background-color: #909744 ; color: #ffffff; }
+.page>a:nth-of-type(1){ background-color: #909744 ; color: #ffffff; }

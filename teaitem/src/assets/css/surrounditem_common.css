@@ -1,0 +1,42 @@
+@import "../../assets/font1/iconfont.css";
+
+/* 周边产品内容 */
+.surround_content{  border-top: 1px solid rgba(170, 170, 170, 0.2); width: 1200px; display: flex;  padding-top: 40px; }
+.surround_content>.left  .title{     color: #444;font-size: 16px;transition: all .3s ease-out 0s;line-height: 20px; }
+.surround_content>.left  .subtitle{  font-size: 13px;line-height: 24px; color: #666666; }
+.surround_content>.left  .description{  margin-top: 20px;font-size: 13px;line-height: 24px;margin-bottom: 24px;color: #888; }
+.listcontent{   width: 380px;   border-top: 1px solid rgba(170, 170, 170, 0.2); margin-bottom: 80px;}
+.listcontent>h3{     font-size: 14px; padding: 30px 0; color: #666;}
+.listcontent>.tea_link{margin-bottom: 30px; }
+.listcontent>.tea_link>a{  margin-right: 10px; padding: 5px 12px;line-height: 26px;border: 1px solid rgba(170, 170, 170, 0.2);color: #828282;background-color: transparent;transition: all 0.6s ease; font-size: 12px;}
+.listcontent>.tea_link>a:hover{border-color: #909744;background-color: #909744;color: #fff;	}
+.surround_content>.left>.listcontent>.link_content{  display: block;  width: 270px; overflow: hidden; }
+.surround_content>.left>.listcontent>.link_content>div{  width: 270px; overflow: hidden; margin-bottom: 20px;}
+.surround_content>.left>.listcontent>.link_content  img{ width: 270px; height: 150px; }
+.surround_content>.left>.listcontent>.link_content:hover{ cursor: pointer; }
+.surround_content>.left>.listcontent>.link_content:hover img{ transform: scale(1.2);  transition: .3s all linear;}
+.surround_content>.left>.listcontent>.link_content>div>.item_wrapper{ background-color:#909744 ; opacity: 0; width: 270px;padding: 9px; height: 150px; position: absolute; left: 0;top: 0;}
+.surround_content>.left>.listcontent>.link_content>div>.item_wrapper>.text{ border: 1px solid rgba(255,255,255,0.3); width: 252px; height: 132px; box-sizing: border-box; padding: 10px;}
+.surround_content>.left>.listcontent>.link_content>div>.item_wrapper>.text>p{color: #ffffff; font-size: 16px;}
+.surround_content>.left>.listcontent>.link_content>div>.item_wrapper>.text>p:nth-of-type(2){   margin-top: 15px; opacity: 0.4; font-size: 13px; line-height: 26px;display: -webkit-box;-webkit-line-clamp: 2;overflow: hidden;}
+.surround_content>.left>.listcontent>.link_content:hover .item_wrapper{opacity: 1; transition: .5s all linear;}
+.surround_content>.right{ margin-left: 70px;      width: calc(100% - 440px); margin-bottom: 100px;}
+.surround_content>.right>.postbody{ margin-bottom: 80px; }
+.surround_content>.right>.postbody>p{  line-height: 24px; font-size: 13px; color: #666666; }
+.surround_content>.right>.postbody>p>strong{  font-size: 16px; }
+.surround_content>.right>.postbody>.pic{ display: flex;  }
+.surround_content>.right>.postbody>.pic>img{ width: 373px; height: 231px; }
+.surround_content>.right>.postbody>.pic>img:first-of-type{margin-right: 15px; }
+.surround_content>.right>.link .word{     width: 250px; overflow: hidden; text-overflow: ellipsis; }
+.surround_content>.right>.link{ display: flex; width: 100%;}
+.surround_content>.right .title{  font-size: 16px;line-height: 20px;color: #666; }
+.surround_content>.right .subtitle{ height: 30px;font-size: 13px;line-height: 30px; color: #666;  white-space: nowrap;  }
+.surround_content>.right>.link>.link_block_left{  display: flex; align-items: center; width: 50%;box-sizing: border-box;  padding-left: 85px; height: 120px; }
+.surround_content>.right>.link>.link_block_left>.iconfont{     position: absolute; top: 42%; left:10%; }
+.surround_content>.right>.link>.link_block_left:hover  {  background-color: #909744; color: #ffffff;  transition:  .3s all  ease; }
+.surround_content>.right>.link>.link_block_left:hover  span{ color: #ffffff; }
+.surround_content>.right>.link>.link_block_right{  display: flex; align-items: center; width: 50%;box-sizing: border-box;  padding-right: 85px; height: 120px; text-align: end; justify-content: flex-end; }
+.surround_content>.right>.link>.link_block_right>.iconfont{   position: absolute; top: 42%; right: 10%; }
+.surround_content>.right>.link>.link_block_right:hover  {  background-color: #909744; color: #ffffff;  transition:  .3s all  ease; }
+.surround_content>.right>.link>.link_block_right:hover  span{ color: #ffffff; }
+.surround_content>.right>.link>.link_block_right:hover  .word{ color: #ffffff; }

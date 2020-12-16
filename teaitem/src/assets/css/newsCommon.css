@@ -1,0 +1,28 @@
+@import "../../assets/font1/iconfont.css";
+
+/* 新闻内容 */
+.news_content{  margin-bottom: 60px;padding-top: 40px; }
+.news_content p{ text-align: center; line-height: 26px; }
+.news_content>.title{ color: #444;font-size: 16px;transition: all .3s ease-out 0s;line-height: 20px;}
+.news_content>.title>p:nth-of-type(2){ font-size: 13px;line-height: 24px; }
+.news_content>.description{   color: #888888;  margin-top: 20px;font-size: 13px;line-height: 24px;margin-bottom: 24px;}
+.news_content>.text>hr{margin: 20px 0;border: none;border-top: 1px dotted rgba(170, 170, 170, 0.2);}
+.news_content>.text>p{ color: #666666; font-size: 13px;}
+.news_content>.text>img{ max-width: 100%; margin: 20px 0; }
+.news_content>.text{ margin-bottom: 60px; }
+.listcontent{   width: 380px;   border-top: 1px solid rgba(170, 170, 170, 0.2); margin-bottom: 80px;}
+.listcontent>h3{     font-size: 14px; padding: 30px 0; color: #666;}
+.listcontent>.tea_link{margin-bottom: 30px; }
+.listcontent>.tea_link>a{  margin-right: 10px; padding: 5px 12px;line-height: 26px;border: 1px solid rgba(170, 170, 170, 0.2);color: #828282;background-color: transparent;transition: all 0.6s ease; font-size: 12px;}
+.listcontent>.tea_link>a:hover{border-color: #909744;background-color: #909744;color: #fff;	}
+.listcontent>#link_content>.pic{ overflow: hidden; width: 380px; height: 130px; box-sizing: border-box; }
+.listcontent>#link_content>.pic>img{ max-width: 100%; height: auto;}
+.listcontent>#link_content>.link_text{padding: 24px 20px;  }
+.listcontent>#link_content>.link_text>p:nth-of-type(2){    color: #333;font-size: 16px;line-height: 30px;margin: 18px 0;}
+.listcontent>#link_content>.link_text>p:nth-of-type(3){  display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;      font-size: 13px;line-height: 26px;}
+.listcontent>#link_content>.link_text>#more{margin: 15px 0 30px; width: 99px; height: 34px; box-sizing: border-box; display: flex; align-items: center; font-size: 14px;padding: 0 15px; justify-content: space-between;}
+.listcontent>#link_content>.link_text>#more{   line-height: 26px;border: 1px solid rgba(170, 170, 170, 0.2);color: #828282;background-color: transparent;transition: all 0.6s ease; }
+.listcontent>#link_content>.link_text>#more>span{ font-size: 12px;}
+.listcontent>#link_content:hover  #more{border-color: #909744;background-color: #909744;color: #fff;	}
+.listcontent>#link_content:hover  .pic>img{ transform: scale(1.1);     transition: all 0.6s ease; }
+.listcontent>#link_content:hover  .link_text>p:nth-of-type(2){ color: #909744;transition: all 0.36s ease;}

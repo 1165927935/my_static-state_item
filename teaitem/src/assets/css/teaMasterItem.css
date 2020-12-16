@@ -1,0 +1,10 @@
+/* 制茶大师内容 */
+.content{ width: 1200px;margin: 0 auto 150px; }
+.content>.title>p:first-of-type{      color: #444;font-size: 16px;transition: all .3s ease-out 0s;line-height: 20px; }
+.content>.title>p:nth-of-type(2){ font-size: 13px;padding-top: 4px;  margin-bottom: 60px;}
+.content>.master{display: flex;  justify-content: space-between; }
+.content>.master>.master_pic>.master_bir{ margin-top: 30px;  }
+.content>.master>.master_pic>.master_bir>p:first-of-type{  font-size: 16px; color: #666666;font-weight: bold; line-height: 24px; }
+.content>.master>.master_pic>.master_bir>p:nth-of-type(2){  font-size: 13px; color: #666666;  }
+.content>.master>.master_itro>p{  line-height: 24px; font-size: 13px; color: #666666;}
+

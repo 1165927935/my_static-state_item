@@ -1,0 +1,65 @@
+/*=======公共样式========*/
+
+/*所有元素的margin,padding设为0*/
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	display: block;
+}
+
+/*字体名称"Microsoft YaHei",大小,颜色*/
+body{
+	/*font-family: "Microsoft YaHei";*/
+	font-size: 14px;
+	color:#999;
+}
+
+/*li样式:无黑点*/
+li{
+	list-style:none;
+}
+
+/*链接默认样式：字体 颜色，去下划线*/
+a{
+	/*color:#333 ;*/
+	color:#999;
+	text-decoration: none;
+}
+
+/*链接悬停样式:字体颜色*/
+a:hover{
+	cursor: pointer;
+}
+
+
+
+/*=======布局相关========*/
+/*清除浮动*/
+.clearfix:after,.clearfix:before{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+/*左浮*/
+.fl{
+	float: left;
+}
+
+/*右浮*/
+.fr{
+	float: right;
+}
+
+/*所有元素的position设为relative*/
+*{
+	position: relative;
+}
+
+.module_container{ width: 1170px;margin: 0 auto; padding-top: 12px;} 
+
+@import "../../assets/font1/iconfont.css";
