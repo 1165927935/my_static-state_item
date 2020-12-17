@@ -62,37 +62,24 @@ export default {
         document.body.scrollTop;
       if (this.scrollTop > 500) {
         this.goTopShow = true;
+      }else {
+        this.goTopShow = false;
       }
       console.log(this.scrollTop);
     },
     goTop() {
-      let timer = null,
-        _that = this;
-      cancelAnimationFrame(timer);
-      timer = requestAnimationFrame(function fn() {
-        if (_that.scrollTop > 0) {
-          _that.scrollTop -= 250;
-          document.body.scrollTop = document.documentElement.scrollTop =
-            _that.scrollTop;
-          timer = requestAnimationFrame(fn);
-        } else {
-          cancelAnimationFrame(timer);
-          _that.goTopShow = false;
+      const that = this
+      let timer = setInterval(() => {
+        let ispeed = Math.floor(-that.scrollTop / 5)
+        document.documentElement.scrollTop = document.body.scrollTop = that.scrollTop + ispeed
+        if (that.scrollTop === 0) {
+          clearInterval(timer)
         }
-      });
+      }, 16)
     },
     lxchange(){
       this.lxshow = ! this.lxshow
     }
-  },
-  watch: {
-    scrollTop() {
-      if (this.scrollTop > 500) {
-        this.goTopShow = true;
-      } else {
-        this.goTopShow = false;
-      }
-    },
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
