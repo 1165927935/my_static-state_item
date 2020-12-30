@@ -36,7 +36,7 @@
       </a>
     </div>
 
-    <transition name="lx"><div class="share go_top" v-show="goTopShow" @click="goTop">
+    <transition  name="lx"><div class="share go_top" v-show="goTopShow" @click="goTop">
       <a href="javascript:window.scrollTo(0,0)">
         <span class="iconfont iconjiantou-shang"></span>
       </a>
@@ -45,6 +45,13 @@
 </template> 
 
 <script>
+// 首先script里面import animate.css
+// import 'animate.css'
+// 然后加入 在transition里面加入 enter-active-class leave-active-class 类名
+// 要设置时间就在CSS里面设置过度时间
+// .animate__animated {
+//   --animate-duration: 5s;
+// }
 export default {
   name: "float_right",
   data() {
@@ -92,15 +99,9 @@ export default {
 <style scoped>
 @import "../../assets/font1/iconfont";
 
-.lx-enter-active {transition: all 1s ease;}
-.lx-leave-active {transition: all 1s ease;}
-.lx-enter, .lx-fade-leave-to{opacity: 0; transform: translateX(25px);}
-.lx-fade-enter, .lx-leave-to{opacity: 0; transform: translateX(25px);}
-
-
-
-
-
+/* .animate__animated {
+  --animate-duration: 5s;
+} */
 #online_lx {
   position: fixed;
   right: 0px;
@@ -191,4 +192,11 @@ export default {
 #olx_head_out{
   bottom: 209px;
 }
+
+
+.lx-enter { opacity: 0; transform: translateX(25px);}
+.lx-enter-to { opacity: 1; transform: translateX(0); transition: all 1s ease;}
+.lx-leave-to { opacity: 1; transform: translateX(0); }
+.lx-leave-to { opacity: 0; transform: translateX(25px); transition: all 1s ease;}
+
 </style>
