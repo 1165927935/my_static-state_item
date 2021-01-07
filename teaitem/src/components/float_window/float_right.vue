@@ -196,7 +196,7 @@ export default {
 
 .lx-enter { opacity: 0; transform: translateX(25px);}
 .lx-enter-to { opacity: 1; transform: translateX(0); transition: all 1s ease;}
-.lx-leave-to { opacity: 1; transform: translateX(0); }
+.lx-leave { opacity: 1; transform: translateX(0); }
 .lx-leave-to { opacity: 0; transform: translateX(25px); transition: all 1s ease;}
 
 </style>
